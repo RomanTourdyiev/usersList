@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="user_image_dimen">80dp</dimen>
+    <dimen name="user_image_radius">40dp</dimen>
+</resources>

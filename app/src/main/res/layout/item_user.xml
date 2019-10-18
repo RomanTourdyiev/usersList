@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/user_image_dimen"
+        android:layout_height="@dimen/user_image_dimen"
+        android:layout_marginTop="@dimen/large_dimen"
+        android:layout_marginLeft="@dimen/large_dimen"
+        android:layout_marginRight="@dimen/large_dimen"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardCornerRadius="@dimen/user_image_radius"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_dimen"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_user_items" />
+
+</LinearLayout>
